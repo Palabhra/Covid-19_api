@@ -1,6 +1,6 @@
 
 const Fetch = document.getElementById("fetch");
-const News = document.getElementById("news");
+const News = document.getElementById("t_data");
 
 
 
@@ -28,20 +28,20 @@ Fetch.addEventListener("click", () => {
 
             
             News.innerHTML += `
-            <div>
+            
                     <table class="table">
-                     <tbody>
+                     
                         <tr>
-                            <td align="left"> "${convert.data[i].date}"</td>
-                            <td align="center">"${convert.data[i].cases.total.calculated.change_from_prior_day}"</th>
-                            <td align="center">"${convert.data[i].outcomes.recovered.calculated.change_from_prior_day}"</td>
-                            <td align="center">"${convert.data[i].outcomes.death.total.calculated.change_from_prior_day}"</td>
+                            <td > "${convert.data[i].date}"</td>
+                            <td >"${convert.data[i].cases.total.calculated.change_from_prior_day}"</td>
+                            <td >"${convert.data[i].outcomes.recovered.calculated.change_from_prior_day}"</td>
+                            <td >"${convert.data[i].outcomes.death.total.calculated.change_from_prior_day}"</td>
                             
                         </tr>
     
                     </tbody>
-                    </table>
-                    </div>`
+                
+                    `
             
 
         }
